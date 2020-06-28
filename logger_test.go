@@ -189,11 +189,11 @@ func TestLogger_SetFormat(t *testing.T) {
 	have = buf.String()
 	if want != have {
 		t.Errorf("\nWant: %sHave: %s", want, have)
-		want_len := len(want)
-		have_len := len(have)
-		min := int(math.Min(float64(want_len), float64(have_len)))
-		if want_len != have_len {
-			t.Errorf("Diff lens: Want: %d, Have: %d.\n", want_len, have_len)
+		wantLen := len(want)
+		haveLen := len(have)
+		min := int(math.Min(float64(wantLen), float64(haveLen)))
+		if wantLen != haveLen {
+			t.Errorf("Diff lens: Want: %d, Have: %d.\n", wantLen, haveLen)
 		}
 		for i := 0; i < min; i++ {
 			if want[i] != have[i] {
