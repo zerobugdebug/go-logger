@@ -29,7 +29,7 @@ var (
 	defFmt = "#%[1]d %[2]s %[4]s:%[5]d ▶ %.3[6]s %[7]s"
 
 	// Default format of time
-	defTimeFmt = "2006-01-02 15:04:05"
+	defTimeFmt = "2006-01-02 15:04:05.000"
 )
 
 // LogLevel type
@@ -37,7 +37,7 @@ type LogLevel int
 
 // Color numbers for stdout
 const (
-	Black = (iota + 30)
+	Black = (iota + 90)
 	Red
 	Green
 	Yellow
